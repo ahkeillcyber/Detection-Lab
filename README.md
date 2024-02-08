@@ -34,7 +34,7 @@ Next, make a directory with the name "snort"
 
 Command: mkdir snort
 Confirm: ls 
-Insert Image 2.1
+![Image 2 1](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/aad107d4-5da5-408f-98fc-cef0acc56166)
 
 Now we need to install some prerequisits in order to stall Snort 3.
 
