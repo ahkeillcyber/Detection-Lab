@@ -42,7 +42,7 @@ sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5
 
 The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My firset step was to try and download these separately and retry the original command. I ran into the same issue. 
 
-Insert Image 3
+![Image 3](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/b31d062b-0ccd-4e3c-a40d-6503fa57d655)
 
 The solution was I firset had to install all the required pre-requisites.
 
