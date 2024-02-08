@@ -22,20 +22,18 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
-
-## Install and configure Snort 3 on Ubuntu 20.04.
+## Install and configure Snort 3 on Ubuntu 20.04
 To begin, start by performing a system update. 
 
-sudo apt-get update && sudo apt-get upgrade -y
-Insert Image 1
+Command: sudo apt-get update && sudo apt-get upgrade -y
+
+![Image 1](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/71f44b57-0c5d-478a-8163-bba91fa4c37b)
 
 Next, make a directory with the name "snort"
 
-mkdir snort
-ls 
+Command: mkdir snort
+Confirm: ls 
 Insert Image 2.1
 
 Now we need to install some prerequisits in order to stall Snort 3.
