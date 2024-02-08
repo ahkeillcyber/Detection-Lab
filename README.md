@@ -1,12 +1,10 @@
-# Detection-Lab
+# Intrusion Detection and Prevention - Lab 
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
 The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
 - Advanced understanding of SIEM concepts and practical application.
 - Proficiency in analyzing and interpreting network logs.
@@ -15,51 +13,68 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Development of critical thinking and problem-solving skills in cybersecurity.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
 - Security Information and Event Management (SIEM) system for log ingestion and analysis.
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Linux Terminal
 
-## Steps
+### Environments Used
 
-## Install and configure Snort 3 on Ubuntu 20.04
-To begin, start by performing a system update. 
+- VMware Hypervisor - Ubuntu Linux VM
+- VMware Hypervisor - Kali Linux VM
 
-Command: sudo apt-get update && sudo apt-get upgrade -y
+### Links
+
+- VMware Hypervisor
+- Ubunto Linux ISO File
+- Kali Linux ISO File
+
+### Step-By-Step Walkthrough
+
+Step 1 - Install and configure Snort 3 on Ubuntu 20.04
+
+- To begin, start by performing a system update. 
+
+- Command: sudo apt-get update && sudo apt-get upgrade -y
 
 ![Image 1](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/71f44b57-0c5d-478a-8163-bba91fa4c37b)
 
-Next, make a directory with the name "snort"
+- Next, make a directory with the name "snort"
 
-Command 1: mkdir snort
+- Command 1: mkdir snort
 
-Command 2: ls 
+- Command 2: ls 
 
 ![Image 2 1](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/aad107d4-5da5-408f-98fc-cef0acc56166)
 
-Now we need to install some prerequisits in order to install Snort 3.
+- Now we need to install some prerequisits in order to install Snort 3.
 
-Command: sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev \ zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev \ libtool uuid-dev git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev \ libmnl-dev ethtool libjemalloc-dev
+- Command: sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev \ zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev \ libtool uuid-dev git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev \ libmnl-dev ethtool libjemalloc-dev
 
-The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My first step was to try and download these separately and retry the original command. I ran into the same issue. 
+- Problem 1 - The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My first step was to try and download these separately and retry the original command. I ran into the same issue. 
 
 ![Image 3](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/b31d062b-0ccd-4e3c-a40d-6503fa57d655)
 
-The solution was I first had to install all the required updates and upgrades.
+- The solution was I first had to install all the required updates and upgrades.
 
-Command 1: sudo apt-get update
+- Command 1: sudo apt-get update
 
-Command 2: sudo apt-get dist-upgrade
+- Command 2: sudo apt-get dist-upgrade
 
-Command 3: sudo reboot
+- Command 3: sudo reboot
 
 ![Image 4](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/01b7b34b-1df7-44b4-b874-e569bfc580c7)
 
-To configure and install Snort 3 succesfully on Ubuntu 20.04, it needs to be built from the source. 
 
-## Install Required Built Tools
-There a quite a few build tools and dependencies that need to be installed prior to the build process to ensure a succesful installation of Snort 3. 
 
-sudo apt install build-essential libpcap-dev libpcre3-dev libnet1-dev zlib1g-dev luajit hwloc libdnet-dev libdumbnet-dev bison flex liblzma-dev openssl libssl-dev pkg-config libhwloc-dev cmake cpputest libsqlite3-dev uuid-dev libcmocka-dev libnetfilter-queue-dev libmnl-dev autotools-dev libluajit-5.1-dev libunwind-dev
+
+
+
+- To configure and install Snort 3 succesfully on Ubuntu 20.04, it needs to be built from the source. 
+
+- Install Required Built Tools
+- There a quite a few build tools and dependencies that need to be installed prior to the build process to ensure a succesful installation of Snort 3. 
+
+- Command: sudo apt install build-essential libpcap-dev libpcre3-dev libnet1-dev zlib1g-dev luajit hwloc libdnet-dev libdumbnet-dev bison flex liblzma-dev openssl libssl-dev pkg-config libhwloc-dev cmake cpputest libsqlite3-dev uuid-dev libcmocka-dev libnetfilter-queue-dev libmnl-dev autotools-dev libluajit-5.1-dev libunwind-dev
 
