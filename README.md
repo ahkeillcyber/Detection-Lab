@@ -57,7 +57,7 @@ Step 1 - Install and configure Snort 3 on Ubuntu 20.04
 
 - Problem 1 - The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My first step was to try and download these separately and retry the original command. I ran into the same issue. 
 
-- The solution was I first had to install all the required updates and upgrades.
+- The solution was I first had to install all the required updates and upgrades using the following commands:
 
 - Command 1: sudo apt-get update
 
