@@ -53,9 +53,9 @@ Step 1 - Install and configure Snort 3 on Ubuntu 20.04
 
 - Command: sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev \ zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev \ libtool uuid-dev git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev \ libmnl-dev ethtool libjemalloc-dev
 
-- Problem 1 - The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My first step was to try and download these separately and retry the original command. I ran into the same issue. 
-
 ![Image 3](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/b31d062b-0ccd-4e3c-a40d-6503fa57d655)
+
+- Problem 1 - The install did not finish. The error that occured says libtool, zlib1g-dev, libmnl-dev, and libjemalloc-dev are unable to locate package. My first step was to try and download these separately and retry the original command. I ran into the same issue. 
 
 - The solution was I first had to install all the required updates and upgrades.
 
