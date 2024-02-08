@@ -35,7 +35,7 @@ The Detection Lab project aimed to establish a controlled environment for simula
 
 Step 1 - Install and configure Snort 3 on Ubuntu 20.04
 
-- To begin, start by performing a system update. 
+- To begin, start by performing a system update in the Ubuntu VM terminal. 
 
 - Command: sudo apt-get update && sudo apt-get upgrade -y
 
