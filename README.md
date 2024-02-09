@@ -73,9 +73,9 @@ Open the command-line interface again and run these commands:
 - sudo apt-get install -y zliblg-dev liblzma-dev openssl libssl-dev
 - sudo apt-get bison flex
 
-image 5 here 
 
-The 
+
+
 
 
 
