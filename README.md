@@ -83,6 +83,7 @@ An error displayed after the last command stating that an invalid operation biso
 - which flex  /*Sanity check to make sure flex is installed*/
 - which bison /*Sanity check to make sure bison is installed*/
 
+![Image 6](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/352c2cab-fbb0-4cca-bb40-1b390a54a034)
 
 
 
