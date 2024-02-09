@@ -75,7 +75,14 @@ Open the command-line interface again and run these commands:
 
 ![Image 5](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/06ecd2bd-e135-4f05-8150-7975d7d6825c)
 
-An error displayed after the last command stating that an invalid operation bison was configured. My troubleshooting step here was to research common erros when using the sudo apt-get bison flex when attempting to install snort. 
+An error displayed after the last command stating that an invalid operation bison was configured. My troubleshooting step here was to research common erros when using the sudo apt-get bison flex when attempting to install snort. I inputted the following commands and rebootedthe system.
+
+- sudo apt-get update
+- sudo apt-get install flex
+- sudo apt-get install bison
+- which flex  /*Sanity check to make sure flex is installed*/
+- which bison /*Sanity check to make sure bison is installed*/
+
 
 
 
