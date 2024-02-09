@@ -73,9 +73,9 @@ Open the command-line interface again and run these commands:
 - sudo apt-get install -y zliblg-dev liblzma-dev openssl libssl-dev
 - sudo apt-get bison flex
 
+![Image 5](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/06ecd2bd-e135-4f05-8150-7975d7d6825c)
 
-
-
+An error displayed after the last command stating that an invalid operation bison was configured. My troubleshooting step here was to research common erros when using the sudo apt-get bison flex when attempting to install snort. 
 
 
 
