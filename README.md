@@ -67,7 +67,15 @@ Step 1 - Install and configure Snort 3 on Ubuntu 20.04
 
 ![Image 4](https://github.com/ahkeillcyber/Detection-Lab/assets/153658518/01b7b34b-1df7-44b4-b874-e569bfc580c7)
 
+Open the command-line interface again and run these commands:
+- sudo apt-get install build-essential
+- sudo apt-get install -y libpcap-dev libpcre3-dev libdumbnet-dev
+- sudo apt-get install -y zliblg-dev liblzma-dev openssl libssl-dev
+- sudo apt-get bison flex
 
+image 5 here 
+
+The 
 
 
 
